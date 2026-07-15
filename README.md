@@ -142,7 +142,7 @@ https://github.com/veeranishanth
 
 ### LinkedIn
 
-https://www.linkedin.com/in/veeranishanth/
+https://www.linkedin.com/in/nishanthveera/
 
 ---
 
