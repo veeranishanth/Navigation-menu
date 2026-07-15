@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Demo | Learn HTML & CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- ========================================
+         NAVIGATION MENU - 5 DIFFERENT STYLES
+         ======================================== -->
+
+    <!-- Style 1: Classic Horizontal Navbar -->
+    <nav class="nav-classic" id="navClassic">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <i class="fas fa-compass"></i>
+                <span>NavDemo</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fas fa-briefcase"></i> Services</a></li>
+                <li><a href="#portfolio"><i class="fas fa-images"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle1" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Style 2: Modern Glassmorphism Navbar -->
+    <nav class="nav-glass" id="navGlass">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <div class="logo-icon">N</div>
+                <span>GlassNav</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-cta">Get Started</button>
+            <button class="nav-toggle" id="navToggle2" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Style 3: Sidebar Navigation -->
+    <aside class="nav-sidebar" id="navSidebar">
+        <div class="sidebar-header">
+            <a href="#home" class="sidebar-logo">
+                <i class="fas fa-layer-group"></i>
+                <span>SideNav</span>
+            </a>
+            <button class="sidebar-close" id="sidebarClose"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> <span>About</span></a></li>
+            <li><a href="#services"><i class="fas fa-briefcase"></i> <span>Services</span></a></li>
+            <li><a href="#portfolio"><i class="fas fa-images"></i> <span>Portfolio</span></a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>&copy; 2026 NavDemo</p>
+        </div>
+    </aside>
+
+    <!-- Style 4: Bottom Tab Bar (Mobile Style) -->
+    <nav class="nav-bottom" id="navBottom">
+        <a href="#home" class="bottom-tab active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#about" class="bottom-tab">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+        </a>
+        <a href="#services" class="bottom-tab">
+            <i class="fas fa-briefcase"></i>
+            <span>Services</span>
+        </a>
+        <a href="#portfolio" class="bottom-tab">
+            <i class="fas fa-images"></i>
+            <span>Work</span>
+        </a>
+        <a href="#contact" class="bottom-tab">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <!-- Style 5: Mega Menu Navbar -->
+    <nav class="nav-mega" id="navMega">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <i class="fas fa-th-large"></i>
+                <span>MegaNav</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li class="has-mega">
+                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-grid">
+                            <div class="mega-col">
+                                <h4>Web Development</h4>
+                                <a href="#"><i class="fas fa-code"></i> Frontend</a>
+                                <a href="#"><i class="fas fa-server"></i> Backend</a>
+                                <a href="#"><i class="fas fa-mobile-alt"></i> Mobile Apps</a>
+                            </div>
+                            <div class="mega-col">
+                                <h4>Design</h4>
+                                <a href="#"><i class="fas fa-paint-brush"></i> UI/UX Design</a>
+                                <a href="#"><i class="fas fa-pencil-ruler"></i> Branding</a>
+                                <a href="#"><i class="fas fa-palette"></i> Illustration</a>
+                            </div>
+                            <div class="mega-col">
+                                <h4>Marketing</h4>
+                                <a href="#"><i class="fas fa-bullhorn"></i> SEO</a>
+                                <a href="#"><i class="fas fa-chart-line"></i> Analytics</a>
+                                <a href="#"><i class="fas fa-ad"></i> PPC Ads</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle5" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Style Switcher -->
+    <div class="style-switcher" id="styleSwitcher">
+        <span class="switcher-label">Menu Style:</span>
+        <button class="switcher-btn active" data-style="classic">
+            <i class="fas fa-bars"></i> Classic
+        </button>
+        <button class="switcher-btn" data-style="glass">
+            <i class="fas fa-gem"></i> Glass
+        </button>
+        <button class="switcher-btn" data-style="sidebar">
+            <i class="fas fa-columns"></i> Sidebar
+        </button>
+        <button class="switcher-btn" data-style="bottom">
+            <i class="fas fa-mobile-alt"></i> Bottom
+        </button>
+        <button class="switcher-btn" data-style="mega">
+            <i class="fas fa-th-large"></i> Mega
+        </button>
+    </div>
+
+    <!-- Mobile Sidebar Toggle -->
+    <button class="sidebar-open" id="sidebarOpen">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Overlay for mobile -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ========================================
+         PAGE CONTENT SECTIONS
+         ======================================== -->
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section section-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="section-tag">Navigation Menu Demo</span>
+                    <h1>Build Beautiful <span class="highlight">Navigation Menus</span></h1>
+                    <p>Learn how to create professional navigation menus using pure HTML and CSS. This page demonstrates 5 different navigation styles with smooth scrolling, active state highlighting, and mobile responsiveness.</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">Explore Sections</a>
+                        <a href="#code" class="btn btn-secondary">View Code</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="nav-preview-card">
+                        <div class="preview-header">
+                            <div class="preview-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="preview-url">navdemo.com</span>
+                        </div>
+                        <div class="preview-nav">
+                            <div class="preview-logo">Logo</div>
+                            <div class="preview-links">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="preview-body">
+                            <div class="preview-line"></div>
+                            <div class="preview-line short"></div>
+                            <div class="preview-line"></div>
+                            <div class="preview-line short"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About</span>
+                    <h2>What is a Navigation Menu?</h2>
+                    <p>A navigation menu is a collection of links that helps users move between different pages or sections of a website.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon"><i class="fas fa-link"></i></div>
+                        <h3>Hyperlinks</h3>
+                        <p>Navigation menus use HTML anchor tags (<code>&lt;a&gt;</code>) to create clickable links that direct users to different destinations.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon"><i class="fas fa-list"></i></div>
+                        <h3>Lists</h3>
+                        <p>Menus are typically built using unordered lists (<code>&lt;ul&gt;</code>) with list items (<code>&lt;li&gt;</code>) for semantic structure and accessibility.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>CSS Styling</h3>
+                        <p>CSS transforms plain links into beautiful navigation bars with colors, spacing, hover effects, and responsive layouts.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Responsive</h3>
+                        <p>Good navigation adapts to all screen sizes using media queries, flexbox, and mobile-friendly toggle buttons.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section section-services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Services</span>
+                    <h2>Navigation Types</h2>
+                    <p>Different websites need different navigation styles. Here are the most common ones.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-number">01</div>
+                        <h3>Horizontal Navbar</h3>
+                        <p>The most common navigation style. Links arranged horizontally across the top of the page. Best for sites with 5-7 main sections.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">02</div>
+                        <h3>Vertical Sidebar</h3>
+                        <p>Links stacked vertically on the left or right side. Great for dashboards, admin panels, and sites with many sections.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">03</div>
+                        <h3>Dropdown Menu</h3>
+                        <p>Parent links reveal child links on hover or click. Perfect for organizing hierarchical content and sub-pages.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">04</div>
+                        <h3>Mega Menu</h3>
+                        <p>Large dropdown panels with multiple columns of links. Ideal for e-commerce sites with many product categories.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">05</div>
+                        <h3>Bottom Tab Bar</h3>
+                        <p>Navigation fixed to the bottom of the screen. The standard for mobile apps and mobile-first websites.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">06</div>
+                        <h3>Hamburger Menu</h3>
+                        <p>A toggle button that reveals navigation on mobile. Three lines that animate into an X when opened.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section section-portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2>Menu Examples</h2>
+                    <p>Real-world navigation patterns you can use in your projects.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-preview nav-preview-1">
+                            <div class="mini-nav">
+                                <span class="mini-logo">Logo</span>
+                                <div class="mini-links">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Simple Top Nav</h3>
+                        <p>Clean, minimal navigation with logo left and links right.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-preview nav-preview-2">
+                            <div class="mini-sidebar">
+                                <span class="mini-logo">L</span>
+                                <div class="mini-side-links">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Icon Sidebar</h3>
+                        <p>Compact sidebar with icons for dashboard-style layouts.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-preview nav-preview-3">
+                            <div class="mini-bottom">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <h3>Mobile Tab Bar</h3>
+                        <p>Fixed bottom navigation with icon + label for mobile apps.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-preview nav-preview-4">
+                            <div class="mini-mega">
+                                <span class="mini-logo">Logo</span>
+                                <span class="mini-mega-trigger">Menu <i class="fas fa-chevron-down"></i></span>
+                                <div class="mini-mega-panel">
+                                    <div></div><div></div><div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Mega Dropdown</h3>
+                        <p>Multi-column dropdown for sites with lots of categories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Section -->
+        <section id="code" class="section section-code">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Code</span>
+                    <h2>How It Works</h2>
+                    <p>Here's the basic HTML structure for a navigation menu.</p>
+                </div>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-title"><i class="fas fa-code"></i> index.html</span>
+                        <button class="code-copy" id="codeCopy"><i class="fas fa-copy"></i> Copy</button>
+                    </div>
+                    <pre class="code-content"><code>&lt;!-- Navigation Menu --&gt;
+&lt;nav class="navbar"&gt;
+  &lt;div class="nav-container"&gt;
+
+    &lt;!-- Logo --&gt;
+    &lt;a href="#home" class="nav-logo"&gt;
+      &lt;i class="fas fa-compass"&gt;&lt;/i&gt;
+      &lt;span&gt;MySite&lt;/span&gt;
+    &lt;/a&gt;
+
+    &lt;!-- Menu Links --&gt;
+    &lt;ul class="nav-menu"&gt;
+      &lt;li&gt;
+        &lt;a href="#home" class="active"&gt;
+          &lt;i class="fas fa-home"&gt;&lt;/i&gt; Home
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#about"&gt;
+          &lt;i class="fas fa-user"&gt;&lt;/i&gt; About
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#services"&gt;
+          &lt;i class="fas fa-briefcase"&gt;&lt;/i&gt; Services
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#portfolio"&gt;
+          &lt;i class="fas fa-images"&gt;&lt;/i&gt; Portfolio
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#contact"&gt;
+          &lt;i class="fas fa-envelope"&gt;&lt;/i&gt; Contact
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- Mobile Toggle --&gt;
+    &lt;button class="nav-toggle"&gt;
+      &lt;span&gt;&lt;/span&gt;
+      &lt;span&gt;&lt;/span&gt;
+      &lt;span&gt;&lt;/span&gt;
+    &lt;/button&gt;
+
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                </div>
+                <div class="code-tips">
+                    <h3><i class="fas fa-lightbulb"></i> Key Concepts</h3>
+                    <ul>
+                        <li><strong>&lt;nav&gt;</strong> — Semantic HTML element for navigation sections</li>
+                        <li><strong>&lt;ul&gt; & &lt;li&gt;</strong> — Unordered list for menu structure</li>
+                        <li><strong>&lt;a href="#section"&gt;</strong> — Anchor links for same-page navigation</li>
+                        <li><strong>CSS :hover</strong> — Visual feedback when users hover over links</li>
+                        <li><strong>Media Queries</strong> — Adapt layout for different screen sizes</li>
+                        <li><strong>position: sticky</strong> — Keep navbar visible while scrolling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact</span>
+                    <h2>Get In Touch</h2>
+                    <p>Have questions about navigation menus? Send a message!</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Web Street, Internet City</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@navdemo.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="How can we help?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <i class="fas fa-compass"></i>
+                        <span>NavDemo</span>
+                    </a>
+                    <p>A simple demo for learning HTML navigation menus and CSS styling.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">MDN: &lt;nav&gt;</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">MDN: &lt;a&gt;</a>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Flexbox Guide</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NavDemo. Built for learning purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Message sent!</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
