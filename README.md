@@ -124,10 +124,10 @@ This project can be deployed easily on:
 ### Sidebar Navigation
 ![Sidebar](screenshots/sidebar.png)
 
-### Bottom Menu
+### Bottom Navigation
 ![Bottom](screenshots/bottom.png)
 
-### Mega Menu
+### Mega Navigation
 ![Mega](screenshots/mega.png)
 
 ---
